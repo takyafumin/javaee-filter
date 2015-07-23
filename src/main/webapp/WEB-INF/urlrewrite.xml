@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
+<urlrewrite>
+
+<!--     <rule> -->
+<!--         <name>トップページ</name> -->
+<!--         <from>^/$</from> -->
+<!--         <to>/WEB-INF/page/index.xhtml$1</to> -->
+<!--     </rule> -->
+
+<!--     <rule> -->
+<!--         <name>ログインページ</name> -->
+<!--         <from>^/login(.*)$</from> -->
+<!--         <to>/WEB-INF/page/login.xhtml$1</to> -->
+<!--     </rule> -->
+
+<!--     <rule> -->
+<!--         <name>ビューアページ：史料区分/架/番-枝番/号/頁</name> -->
+<!--         <from>^/osd/(.*)/(.*)/(.*)-(.*)/(.*)/(.*)$</from> -->
+<!--         <to>/WEB-INF/page/viewer.xhtml?shiryo=$1&amp;ka=$2&amp;ban=$3&amp;eda=$4&amp;go=$5&amp;page=$6</to> -->
+<!--     </rule> -->
+
+<!--     <rule> -->
+<!--         <name>ビューアページ：史料区分/架/番/号/頁</name> -->
+<!--         <from>^/osd/(.*)/(.*)/(.*)/(.*)/(.*)$</from> -->
+<!--         <to>/WEB-INF/page/viewer.xhtml?shiryo=$1&amp;ka=$2&amp;ban=$3&amp;go=$4&amp;page=$5</to> -->
+<!--     </rule> -->
+
+<!--     <rule> -->
+<!--         <name>ビューアページ：史料区分/頁</name> -->
+<!--         <from>^/osd/(.*)/(.*)$</from> -->
+<!--         <to>/WEB-INF/page/viewer.xhtml?shiryo=$1&amp;page=$2</to> -->
+<!--     </rule> -->
+
+
+<!--     <rule> -->
+<!--         <name>ビューアページ：プロテクトあり / なし</name> -->
+<!--         <from>^/image/(.*)$</from> -->
+<!--         <to>/WEB-INF/page/image/$1</to> -->
+<!--     </rule> -->
+
+</urlrewrite>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE logback>
+<configuration>
+
+    <!-- appender -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <target>System.out</target>
+        <encoder>
+            <pattern>[%-5level] [%logger{1}] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- ファイルへの出力設定 -->
+    <appender name="APPLOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>../logs/app.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>../logs/app.log.%d{yyyy-MM-dd}</FileNamePattern>
+            <MaxHistory>10</MaxHistory>
+        </rollingPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>[%date{yyyy/MM/dd HH:mm:ss.SSS}] [%-5level] [%logger{1}] %msg%n</pattern>
+            <immediateFlush>true</immediateFlush>
+        </encoder>
+    </appender>
+
+    <!-- logger -->
+    <logger name="com.example.sample">
+        <level value="debug" />
+        <appender-ref ref="APPLOG" />
+    </logger>
+
+    <!-- root logger -->
+    <root>
+        <level value="debug" />
+        <appender-ref ref="STDOUT" />
+    </root>
+
+</configuration>
